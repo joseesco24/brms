@@ -1,0 +1,19 @@
+{
+	"name": "dummy_enterprises_process_management_system",
+	"version": "0.0.0",
+	"description": "My first attempt to create an enterprise architecture that left all the business logic in charge to enterprise systems.",
+	"author": {
+		"email": "josed.escobar@outlook.com",
+		"name": "joseesco24"
+	},
+	"readme": "readme.md",
+	"scripts": {
+		"commitmsg": "bash hooks/commit-msg.sh",
+		"postinstall": "npx husky install"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.7",
+		"@commitlint/config-conventional": "^17.6.7",
+		"husky": "^8.0.3"
+	}
+}
