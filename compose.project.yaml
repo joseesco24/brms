@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  openltablets_web_service:
+    container_name: openltablets_web_service
+    image: ghcr.io/joseesco24/openltablets_web_service:latest
+    networks:
+      - openltablets_network
+    ports:
+      - target: 8080
+        published: 5438
+        protocol: tcp
+
+  openltablets_web_studio:
+    container_name: openltablets_web_studio
+    image: ghcr.io/joseesco24/openltablets_web_studio:latest
+    networks:
+      - openltablets_network
+    ports:
+      - target: 8080
+        published: 5436
+        protocol: tcp
+
+networks:
+  openltablets_network:
+    name: openltablets_network
+    external: false
+    driver: bridge

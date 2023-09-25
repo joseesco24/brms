@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  openltablets_web_service:
+    image: ghcr.io/joseesco24/openltablets_web_service:latest
+    build:
+      dockerfile: ./dockerfiles/openltablets.web.service.dockerfile
+      context: .
+
+  openltablets_web_studio:
+    image: ghcr.io/joseesco24/openltablets_web_studio:latest
+    build:
+      dockerfile: ./dockerfiles/openltablets.web.studio.dockerfile
+      context: .
