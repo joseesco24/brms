@@ -4,6 +4,28 @@ My first attempt to create an enterprise architecture that left all the business
 
 <br/>
 
+## Exposed Services
+
+Almost all the enterprise systems used in the project expose a web admin interface, the web admin interfaces and the needed credentials are listed here.
+
+### Jboss Jbpm Server
+
+#### Main interface
+
+**Url:** http://localhost:5440/business-central
+
+### Openltablets Web Service
+
+#### Main interface
+
+**Url:** http://localhost:5438/
+
+### Openltablets Web Studio
+
+#### Main interface
+
+**Url:** http://localhost:5436/
+
 ## Docker Compose Project Commands
 
 **Note:** Before running any of these commands be sure that your **CWD** is **dummy_enterprises_process_management_system** directory.
