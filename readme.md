@@ -14,6 +14,11 @@ Almost all the enterprise systems used in the project expose a web admin interfa
 
 **Url:** http://localhost:5440/business-central
 
+#### Admin User Credentials
+
+**User Name:** wbadmin
+**Password:** wbadmin
+
 ### Openltablets Web Service
 
 #### Main interface
