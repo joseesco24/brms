@@ -18,8 +18,8 @@ Almost all the enterprise systems used in the project expose a web admin interfa
 
 #### Admin User Credentials
 
-**User Name:** wbadmin
-**Password:** wbadmin
+**User Name:** wbadmin <br/>
+**Password:** wbadmin <br/>
 
 <br/>
 

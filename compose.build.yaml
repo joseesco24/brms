@@ -18,3 +18,9 @@ services:
     build:
       dockerfile: ./dockerfiles/jboss.jbpm.server.dockerfile
       context: .
+
+  jboss_jbpm_server_database:
+    image: ghcr.io/joseesco24/jboss_jbpm_server_database:latest
+    build:
+      dockerfile: ./dockerfiles/jboss.jbpm.server.database.dockerfile
+      context: .
