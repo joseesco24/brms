@@ -12,3 +12,9 @@ services:
     build:
       dockerfile: ./dockerfiles/openltablets.web.studio.dockerfile
       context: .
+
+  jboss_jbpm_server:
+    image: ghcr.io/joseesco24/jboss_jbpm_server:latest
+    build:
+      dockerfile: ./dockerfiles/jboss.jbpm.server.dockerfile
+      context: .
