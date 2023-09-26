@@ -23,9 +23,9 @@ services:
     depends_on:
       - jboss_jbpm_server_database
 
-  openltablets_web_service:
-    container_name: openltablets_web_service
-    image: ghcr.io/joseesco24/openltablets_web_service:latest
+  openltablets_server:
+    container_name: openltablets_server
+    image: ghcr.io/joseesco24/openltablets_server:latest
     networks:
       - openltablets_network
       - jboss_jbpm_network
@@ -44,9 +44,9 @@ services:
         published: 5436
         protocol: tcp
 
-  jboss_jbpm_server_database:
-    container_name: jboss_jbpm_server_database
-    image: ghcr.io/joseesco24/jboss_jbpm_server_database:latest
+  jboss_jbpm_database:
+    container_name: jboss_jbpm_database
+    image: ghcr.io/joseesco24/jboss_jbpm_database:latest
     networks:
       - jboss_jbpm_network
     environment:
@@ -59,7 +59,7 @@ services:
         protocol: tcp
     volumes:
       - type: volume
-        source: jboss_jbpm_server_database_disc
+        source: jboss_jbpm_database_disc
         target: /var/lib/postgresql/data
 
 networks:
@@ -73,4 +73,4 @@ networks:
     driver: bridge
 
 volumes:
-  jboss_jbpm_server_database_disc:
+  jboss_jbpm_database_disc:
