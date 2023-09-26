@@ -7,10 +7,10 @@ services:
     networks:
       - jboss_jbpm_network
     environment:
-      JBPM_DB_HOST: ${JBPM_DB_HOST}
-      JBPM_DB_PORT: ${JBPM_DB_PORT}
+      JBPM_DB_HOST: jboss_jbpm_server_database
       JBPM_DB_DRIVER: postgres
       JBPM_DB_PASSWORD: jbpm
+      JBPM_DB_PORT: 5432
       JBPM_DB_NAME: jbpm
       JBPM_DB_USER: jbpm
     ports:
