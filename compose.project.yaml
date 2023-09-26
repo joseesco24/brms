@@ -21,7 +21,7 @@ services:
         published: 5442
         protocol: tcp
     depends_on:
-      - jboss_jbpm_server_database
+      - jboss_jbpm_database
 
   openltablets_server:
     container_name: openltablets_server
