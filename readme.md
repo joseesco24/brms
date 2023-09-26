@@ -31,14 +31,6 @@ Almost all the enterprise systems used in the project expose a web admin interfa
 
 <br/>
 
-### Openltablets Web Studio
-
-#### Main interface
-
-**Url:** http://localhost:5436/
-
-<br/>
-
 ## Docker Compose Project Commands
 
 **Note:** Before running any of these commands be sure that your **CWD** is **dummy_enterprises_process_management_system** directory.

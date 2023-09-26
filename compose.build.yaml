@@ -7,12 +7,6 @@ services:
       dockerfile: ./dockerfiles/openltablets.server.dockerfile
       context: .
 
-  openltablets_web_studio:
-    image: ghcr.io/joseesco24/openltablets_web_studio:latest
-    build:
-      dockerfile: ./dockerfiles/openltablets.web.studio.dockerfile
-      context: .
-
   jboss_jbpm_server:
     image: ghcr.io/joseesco24/jboss_jbpm_server:latest
     build:
