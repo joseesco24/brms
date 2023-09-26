@@ -23,7 +23,7 @@ Almost all the enterprise systems used in the project expose a web admin interfa
 
 <br/>
 
-### Openltablets Web Service
+### Openltablets Server
 
 #### Main interface
 
