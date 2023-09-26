@@ -5,16 +5,16 @@ services:
     image: ghcr.io/joseesco24/openltablets_server:latest
     build:
       context: ./containers/openltablets_server/
-      dockerfile: ./dockerfile
+      dockerfile: ./Dockerfile
 
   jboss_jbpm_server:
     image: ghcr.io/joseesco24/jboss_jbpm_server:latest
     build:
       context: ./containers/jboss_jbpm_server/
-      dockerfile: ./dockerfile
+      dockerfile: ./Dockerfile
 
   jboss_jbpm_database:
     image: ghcr.io/joseesco24/jboss_jbpm_database:latest
     build:
       context: ./containers/jboss_jbpm_database/
-      dockerfile: ./dockerfile
+      dockerfile: ./Dockerfile
