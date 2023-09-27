@@ -8,7 +8,7 @@ services:
       - jboss_jbpm_database_network
       - openltablets_network
     environment:
-      JBPM_DB_HOST: jboss_jbpm_server_database
+      JBPM_DB_HOST: jboss_jbpm_database
       JBPM_DB_DRIVER: postgres
       JBPM_DB_PASSWORD: jbpm
       JBPM_DB_PORT: 5432
