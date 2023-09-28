@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "26fbf1ff-2444-41a9-8145-f9040a5a8db7",
+		"name": "dummy_enterprises_process_management_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8443281"
+	},
+	"item": [
+		{
+			"name": "brms",
+			"item": [
+				{
+					"name": "content",
+					"item": [
+						{
+							"name": "contentApprovalRule1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "text/plain;charset=UTF-8"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"tematica\": \"Cultural\",\n    \"aptoParaTodoElPublico\": true,\n    \"cumpleNormativas\": true,\n    \"derechosDeAutorValidos\": true,\n    \"duracion\": 25\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/brms/content/contentApprovalRule1",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"brms",
+										"content",
+										"contentApprovalRule1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://localhost:5438",
+			"type": "string"
+		}
+	]
+}

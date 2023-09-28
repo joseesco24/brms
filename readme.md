@@ -38,19 +38,19 @@ Almost all the enterprise systems used in the project expose a web admin interfa
 ### Docker Compose Build Image Using Compose File
 
 ```bash
-docker-compose -f compose.build.yaml build
+docker-compose -f compose_files/project.build.yaml build
 ```
 
 ### Docker Compose Start Project Using Compose File
 
 ```bash
-docker-compose -f compose.project.yaml up
+docker-compose -f compose_files/project.yaml up
 ```
 
 ### Docker Compose Stop Project Using Compose File
 
 ```bash
-docker-compose -f compose.project.yaml down
+docker-compose -f compose_files/project.yaml down
 ```
 
 <br/>
