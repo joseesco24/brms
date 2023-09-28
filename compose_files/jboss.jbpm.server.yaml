@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  jboss_jbpm_server:
+    container_name: jboss_jbpm_server
+    image: ghcr.io/joseesco24/jboss_jbpm_server:latest
+    networks:
+      - jboss_jbpm_database_network
+    environment:
+      JBPM_DB_HOST: jboss_jbpm_database
+      JBPM_DB_DRIVER: postgres
+      JBPM_DB_PASSWORD: jbpm
+      JBPM_DB_PORT: 5432
+      JBPM_DB_NAME: jbpm
+      JBPM_DB_USER: jbpm
+    ports:
+      - target: 8080
+        published: 5440
+        protocol: tcp
+      - target: 8001
+        published: 5442
+        protocol: tcp
+    depends_on:
+      - jboss_jbpm_database
+
+  jboss_jbpm_database:
+    container_name: jboss_jbpm_database
+    image: ghcr.io/joseesco24/jboss_jbpm_database:latest
+    networks:
+      - jboss_jbpm_database_network
+    environment:
+      POSTGRES_PASSWORD: jbpm
+      POSTGRES_USER: jbpm
+      POSTGRES_DB: jbpm
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: jboss_jbpm_database_disc
+        target: /var/lib/postgresql/data
+
+networks:
+  jboss_jbpm_database_network:
+    name: jboss_jbpm_database_network
+    external: false
+    driver: bridge
+
+volumes:
+  jboss_jbpm_database_disc:
