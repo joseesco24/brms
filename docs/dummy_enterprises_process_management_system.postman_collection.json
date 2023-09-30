@@ -28,7 +28,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"tematica\": \"Cultural\",\n    \"aptoParaTodoElPublico\": true,\n    \"cumpleNormativas\": true,\n    \"derechosDeAutorValidos\": true,\n    \"duracion\": 25\n}"
+									"raw": "{\n    \"topic\": \"Cultural\",\n    \"isAbleForAllAudiences\": true,\n    \"isAccomplishingRegulations\": true,\n    \"isAccomplishingAuthorRights\": true,\n    \"duration\": 26\n}"
 								},
 								"url": {
 									"raw": "{{HOST}}/brms/content/contentApprovalRule1",
@@ -72,7 +72,17 @@
 	"variable": [
 		{
 			"key": "HOST",
+			"value": "{{CLOUD_HOST}}",
+			"type": "string"
+		},
+		{
+			"key": "LOCAL_HOST",
 			"value": "http://localhost:5438",
+			"type": "string"
+		},
+		{
+			"key": "CLOUD_HOST",
+			"value": "http://13.92.28.33:8080",
 			"type": "string"
 		}
 	]
