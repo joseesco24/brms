@@ -2,19 +2,19 @@ version: "3.8"
 
 services:
   openltablets_server:
-    image: ghcr.io/joseesco24/openltablets_server:latest
+    image: ghcr.io/joseeco24/openltablets_server:latest
     build:
       context: .././containers/openltablets_server/
       dockerfile: ./Dockerfile
 
   jboss_jbpm_server:
-    image: ghcr.io/joseesco24/jboss_jbpm_server:latest
+    image: ghcr.io/joseeco24/jboss_jbpm_server:latest
     build:
       context: .././containers/jboss_jbpm_server/
       dockerfile: ./Dockerfile
 
   jboss_jbpm_database:
-    image: ghcr.io/joseesco24/jboss_jbpm_database:latest
+    image: ghcr.io/joseeco24/jboss_jbpm_database:latest
     build:
       context: .././containers/jboss_jbpm_database/
       dockerfile: ./Dockerfile
