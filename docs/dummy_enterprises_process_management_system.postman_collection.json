@@ -45,6 +45,43 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "programming-grid",
+					"item": [
+						{
+							"name": "programmingGridApprovalRule1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "text/plain;charset=UTF-8"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fullWeek\": true,\n    \"channelsPerDay\": 13,\n    \"weekUsedMinutes\": 10081\n}"
+								},
+								"url": {
+									"raw": "{{HOST}}/brms/programming-grid/programmingGridApprovalRule1",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"brms",
+										"programming-grid",
+										"programmingGridApprovalRule1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
@@ -82,7 +119,7 @@
 		},
 		{
 			"key": "CLOUD_HOST",
-			"value": "http://13.92.28.33:8080",
+			"value": "http://4.236.181.147:8080",
 			"type": "string"
 		}
 	]
