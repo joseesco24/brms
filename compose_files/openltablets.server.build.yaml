@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   openltablets_server:
-    image: ghcr.io/joseeco24/openltablets_server:latest
+    image: ghcr.io/joseesco24/openltablets_server:latest
     build:
       context: .././containers/openltablets_server/
       dockerfile: ./Dockerfile
